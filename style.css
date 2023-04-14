@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Montserrat', sans-serif;
+	box-sizing: border-box;
+}
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(../p10.jpeg);
+	min-height: 100vh;
+	width: 100%;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+ul{
+	float: right;
+	list-style-type: none;
+	margin-top: 25px;
+	margin-right: 5px;
+}
+ul li{
+	display: inline-block;
+	letter-spacing: 1px;
+	list-style: none;
+	padding: 8px 12px;
+	position: relative;
+	
+}
+ul li a{
+	text-decoration: none;
+	color: white;
+	padding: 5px, 20px;
+	border: 2px solid transparent;
+	transition: 0.5s ease background-color;
+}
+ul li a:hover{
+	background-color: white;
+	color: black;
+}
+
+.main{
+	max-width: 1200px;
+	margin: auto;
+}
+.title{ 
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	transform: translate(-50%, -50%);
+}
+.title h1{
+	color: white;
+	font-size: 50px;
+}
+.button{
+	position: absolute;
+	top: 65%;
+	left: 31%;
+	transform: translate(-50%, -50%);
+}
+.btn{
+	display: inline-block;
+	border: 2px solid white;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	transition: 0.5s ease background-color;
+	font-size: 20px;
+	letter-spacing: 1px;
+	margin-top: 30px;
+	cursor: pointer;
+	
+}
+.btn:hover{
+	background-color: white;
+	color: black;
+}
+/*-------About------*/
+.About{
+	width: 80%;
+	margin: auto;
+	text-align: center;
+	padding-top: 100px;
+}
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+p{
+	color: black;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;
+	padding: 10px;
+}
+.row{
+	align-items: center;
+	margin-top: 5%;
+	margin: 10px 10px;
+	justify-content: center;
+}
+.About-col{
+	flex-basis: 31%;
+	background: #E5E5E5;
+	border-radius: 10px;
+	margin-bottom:5%;
+	padding: 12px 20px;
+	box-sizing: border-box;
+	transition: 0.5s;
+}
+h3{
+	text-align: center;
+	font-weight: 600;
+	margin: 10px 0;
+}
+.About-col:hover{
+	box-shadow: 0 0 20px 0px rgba(110, 44, 0,0.2);
+}
+/*---------Contact-------*/
+.contact-info{
+	display: flex;
+	width: 100%;
+	max-width: 1200px;
+	margin: auto;
+	align-items: center;
+	justify-content: center;
+	padding: 0 20px;
+}
+h1{
+	font-size: 36px;
+	font-weight: 600;
+}
+p{
+	color: black;
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 20px;
+	padding: 10px;
+}
+.card{
+	background: #E5E5E5;
+	padding: 5px 20px;
+	margin: 40px 30px;
+	width: calc(33% - 20px);
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	color: black;
+	cursor: pointer;
+}
+.card-icon{
+	font-size: 28px;
+	background: transparent;
+	width: 60px;
+	height: 60px;
+	text-align: center;
+	line-height: 60px !important;
+	border-radius: 50%;
+	transition: 0.3s linear;
+}
+.card:hover .card-icon{
+	background: none;
+	color: white;
+	transform: scale(1.6);
+}
+.card p{
+	margin-top: 20px;
+	font-weight: 300;
+	letter-spacing: 1px;
+	max-height: 0;
+	opacity: 0%;
+	transition: 0.3s linear;
+}
+.card:hover p{
+	max-height: 40px;
+	opacity: 1;
+}
